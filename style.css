@@ -1,0 +1,288 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Amiri', serif;
+    background-color: #0f2027;
+    color: white;
+    line-height: 1.8;
+    padding: 10px;
+}
+
+/* Header styling */
+header {
+    background-color: #203a43;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #d4af37;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d4af37;
+    padding: 8px 16px;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #d4af37;
+    color: #203a43;
+}
+
+/* Section styling */
+section {
+    background-color: #203a43;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    margin-bottom: 70px;
+}
+
+/* Section headings */
+section h2 {
+    font-size: 2rem;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+/* Section paragraphs */
+section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 15px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* Ayah block styling */
+.ayah {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 4px solid #d4af37;
+    background-color: #2e4a5b;
+    border-radius: 5px;
+}
+
+/* Arabic text */
+.arabic {
+    font-family: 'Amiri', serif;
+    font-size: 1.6rem;
+    text-align: right;
+    direction: rtl;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Translation text */
+.translation {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    color: #d4af37;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Footer styling */
+footer {
+    background-color: #203a43;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #d4af37;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* ---------- RESPONSIVENESS ---------- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .arabic {
+        font-size: 1.4rem;
+    }
+
+    .translation {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .arabic {
+        font-size: 1.2rem;
+    }
+
+    .translation {
+        font-size: 0.95rem;
+    }
+
+    nav ul li a {
+        padding: 6px 12px;
+        font-size: 1rem;
+    }
+}
+
+.explore {
+    text-align: center;
+    padding: 20px;
+}
+
+.explore h2 {
+    margin-bottom: 15px;
+}
+
+.explore ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 15px 0;
+}
+
+.explore ul li {
+    margin: 8px 0;
+}
+
+.explore a {
+    text-decoration: none;
+    color: #007BFF; /* Nice blue color for links */
+}
+
+.explore a:hover {
+    text-decoration: underline;
+}
+
+.explore {
+    text-align: center;
+    padding: 20px;
+}
+
+.explore h2 {
+    margin-bottom: 15px;
+}
+
+.explore ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 15px 0;
+}
+
+.explore ul li {
+    margin: 8px 0;
+}
+
+.explore a {
+    text-decoration: none;
+    color: #007BFF; /* Nice blue color for links */
+}
+
+.explore a:hover {
+    text-decoration: underline;
+}
+
+.section-center h2 {
+    text-align: center;
+}
+
+.section-center blockquote {
+    text-align: center;
+    margin: 15px auto;
+    font-style: italic;
+    color: #d4af37;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.audio-section audio {
+    display: block;
+    margin: 15px auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+footer a:hover {
+    color: goldenrod;
+    text-shadow: 0 0 8px gold;
+}
+  
+  .golden-icon {
+    color: goldenrod;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.golden-icon:hover {
+    color: goldenrod;
+    text-shadow: 0 0 8px gold;
+}
